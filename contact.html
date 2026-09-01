@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Contatti dell&#x27;autore e sviluppatore di DOMUS🎾TENNIS.">
+<title>Contatti | DOMUS🎾TENNIS</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">DOMUS🎾TENNIS</div>
+    <div class="claim">La SocialApp per i circoli tennis.</div>
+  </div>
+</header>
+<nav>
+  <div class="wrap">
+    <a href="index.html">Home</a>
+    <a href="circoli.html">Per i circoli</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Termini</a>
+    <a href="support.html">Supporto</a>
+    <a href="contact.html">Contatti</a>
+  </div>
+</nav>
+
+<main><div class="wrap">
+<div class="card">
+  <div class="badge">Contatta l’autore</div>
+  <h1>Contatti DOMUS🎾TENNIS</h1>
+  <p>Per informazioni sulla piattaforma, richieste di utilizzo da parte di un circolo, proposte di collaborazione o segnalazioni tecniche puoi contattare direttamente l’autore.</p>
+
+  <form id="contactForm">
+    <div>
+      <label for="name">Nome e cognome</label>
+      <input id="name" name="name" type="text" required>
+    </div>
+    <div>
+      <label for="club">Circolo / organizzazione</label>
+      <input id="club" name="club" type="text">
+    </div>
+    <div>
+      <label for="reply">Email</label>
+      <input id="reply" name="reply" type="email" required>
+    </div>
+    <div>
+      <label for="subject">Motivo del contatto</label>
+      <select id="subject" name="subject">
+        <option>Informazioni su DOMUS🎾TENNIS</option>
+        <option>Richiesta utilizzo per un circolo</option>
+        <option>Assistenza tecnica</option>
+        <option>Collaborazione</option>
+        <option>Altro</option>
+      </select>
+    </div>
+    <div>
+      <label for="message">Messaggio</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <button type="submit">Prepara email</button>
+  </form>
+
+  <p class="small">Il modulo non invia dati a un server: apre il programma di posta del dispositivo con il messaggio già compilato.</p>
+</div>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const club = document.getElementById('club').value.trim();
+  const reply = document.getElementById('reply').value.trim();
+  const subject = document.getElementById('subject').value;
+  const message = document.getElementById('message').value.trim();
+  const body =
+    'Nome: ' + name + '\n' +
+    'Circolo/organizzazione: ' + club + '\n' +
+    'Email: ' + reply + '\n\n' +
+    message;
+  window.location.href = 'mailto:paolovcentrice@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+});
+</script>
+</div></main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <strong>DOMUS🎾TENNIS</strong><br>
+      © 2026 Paolo Ventrice — Autore, ideatore e sviluppatore.<br>
+      Tutti i diritti riservati.<br>
+      <a href="mailto:paolovcentrice@gmail.com">paolovcentrice@gmail.com</a>
+    </div>
+    <div>
+      <strong>Utilizzatore attuale della piattaforma</strong><br>
+      A.S. DILETTANTISTICA DOMUS AMICITIAE APS<br>
+      <a href="mailto:domusamicitiae2026@gmail.com">domusamicitiae2026@gmail.com</a><br>
+      <span class="small">Ultimo aggiornamento: 1 settembre 2026</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

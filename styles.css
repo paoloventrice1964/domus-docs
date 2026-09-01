@@ -19,9 +19,24 @@ h1,h2,h3{line-height:1.25}
 h1{margin-top:0}
 h2{margin-top:1.5rem}
 a{color:var(--accent)}
-footer{border-top:1px solid var(--border);background:#fff;color:var(--muted);padding:24px 20px 40px;font-size:.95rem}
+footer{border-top:1px solid var(--border);background:#fff;color:var(--muted);padding:28px 20px 42px;font-size:.95rem}
+.footer-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .badge{display:inline-block;background:#e8f5ee;color:var(--accent-dark);border-radius:999px;padding:5px 10px;font-size:.85rem;font-weight:700;margin-bottom:12px}
 .notice{background:#f0f7f3;border-left:4px solid var(--accent);padding:14px 16px;border-radius:8px}
 .small{font-size:.94rem;color:var(--muted)}
 ul,ol{padding-left:1.25rem}
-@media(max-width:600px){.brand{font-size:1.7rem}nav .wrap{gap:12px}.card{padding:20px}}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.button{display:inline-block;background:var(--accent);color:white;text-decoration:none;font-weight:700;padding:11px 16px;border-radius:10px}
+.button.secondary{background:white;color:var(--accent);border:1px solid var(--accent)}
+form{display:grid;gap:14px}
+label{font-weight:650}
+input,textarea,select{width:100%;padding:12px 13px;border:1px solid var(--border);border-radius:10px;font:inherit;background:white;color:var(--text)}
+textarea{min-height:150px;resize:vertical}
+button{border:0;background:var(--accent);color:white;padding:12px 16px;border-radius:10px;font:inherit;font-weight:700;cursor:pointer}
+.meta{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:700px){
+  .brand{font-size:1.7rem}
+  nav .wrap{gap:12px}
+  .card{padding:20px}
+  .footer-grid,.meta{grid-template-columns:1fr}
+}

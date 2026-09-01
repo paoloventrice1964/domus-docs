@@ -1,8 +1,11 @@
 # DOMUS🎾TENNIS
 
-Minisito ufficiale e documentale del progetto DOMUS🎾TENNIS.
+Portale ufficiale DOMUS🎾TENNIS.
 
-Dominio ufficiale: https://domus.paoloventrice.it
+Autore, ideatore e sviluppatore: Paolo Ventrice
+Contatto autore: paolovcentrice@gmail.com
 
-Titolare: A.S. DILETTANTISTICA DOMUS AMICITIAE APS
-Contatto: domusamicitiae2026@gmail.com
+Utilizzatore attuale: A.S. DILETTANTISTICA DOMUS AMICITIAE APS
+Contatto utilizzatore: domusamicitiae2026@gmail.com
+
+Dominio: https://domus.paoloventrice.it
